@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BusinessInvest | WDD 131.</title>
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals,The businessInvest WebSite Project"
+    />
+    <meta name="author" content="Marcel Nyembo" />
+    <link rel="stylesheet" href="styles/business-invest.css" />
+    <link rel="stylesheet" href="styles/business-invest-large.css" />
+    <script src="scripts/business-invest.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1>BusinessInvest</h1>
+        <img
+          src="images/startup_project_launch_rocket_laptop.webp"
+          alt="Home Page Wireframe Example Design"
+          width="90"
+          height="90"
+        />
+      </div>
+
+      <a id="menu" href="#"></a>
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html" id="home" class="active">Home</a></li>
+
+          <li><a href="about-us.html">About Us</a></li>
+          <li>
+            <div class="dropdown">
+              <a href="#" class="dropbtn">Projects </a>
+
+              <div class="dropdown-content">
+                <a id="new" href="#">Recent</a>
+                <a href="#" id="expensive">Expensive </a>
+                <a href="#" id="cheap">Cheap</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="card-header">
+        <div id="hero" class="row">
+          <div class="brand">
+            <h1>Better Solutions For Your Business</h1>
+            <h2>
+              We are a professional network designed to help you build and grow
+              your business
+            </h2>
+            <div class="">
+              <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            </div>
+          </div>
+          <div>
+            <img src="images/hero-img.png" class="img-fluid animated" alt="" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="card-container"></div>
+      </section>
+      <section id="pricing" class="pricing">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Investing</h2>
+            <p>
+              Crowdfunding is a type of fundraising in which a large number of
+              people contribute small amounts of money to a project or business
+              venture. It is often done through online platforms that allow
+              individuals to donate money to projects they believe
+            </p>
+          </div>
+
+          <div class="row">
+            <div>
+              <div class="box">
+                <h3>Project Plan</h3>
+                <h4><sup>$</sup>20<span>per month</span></h4>
+                <ul>
+                  <li><i class="bx bx-check">✔</i>Project Overview</li>
+                  <li>
+                    <i class="bx bx-check">✔</i> Project Goals and Objectives
+                  </li>
+                  <li><i class="bx bx-check">✔</i> Scope and Deliverables</li>
+                  <li class="na">
+                    <i class="bx bx-x">✔</i>
+                    <span>Project Timeline</span>
+                  </li>
+                  <li class="na">
+                    <i class="bx bx-x">✔</i>
+                    <span>Challenges and Solutions</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div class="box featured">
+                <h3>Business Plan</h3>
+                <h4><sup>$</sup>29<span>per month</span></h4>
+                <ul>
+                  <li><i class="bx bx-check">✔</i> Products and Services</li>
+                  <li>
+                    <i class="bx bx-check">✔</i> Marketing and Sales Strategy
+                  </li>
+                  <li><i class="bx bx-check">✔</i> Operations Plan</li>
+                  <li><i class="bx bx-check">✔</i> Financial Projections</li>
+                  <li><i class="bx bx-check">✔</i> Management Team</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div class="box">
+                <h3>Marketing Plan</h3>
+                <h4><sup>$</sup>49<span>per Branding</span></h4>
+                <ul>
+                  <li><i class="bx bx-check">✔</i> Market Analysis</li>
+                  <li><i class="bx bx-check">✔</i> Marketing Objectives</li>
+                  <li><i class="bx bx-check">✔</i>Marketing Strategies</li>
+                  <li><i class="bx bx-check">✔</i> Marketing Tactics</li>
+                  <li><i class="bx bx-check">✔</i> Public Relations</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="footer">
+        <div class="footer-newsletter">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <h4>Join Our Newsletter</h4>
+                <p>
+                  Tamen quem nulla quae legam multos aute sint culpa legam
+                  noster magna
+                </p>
+                <form action="" method="post">
+                  <input type="email" name="email" />
+                  <input type="submit" value="Subscribe" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        ©️<span id="currentyear"></span>🌴 Nyembo Musuyu Marcel 🌴 Lubumbashi,
+        Republic Democratic Of Congo
+      </p>
+      <p><em id="last"></em></p>
+    </footer>
+  </body>
+</html>
