@@ -1,3 +1,15 @@
+const links = document.querySelectorAll(".menu");
+
+links.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    // Remove active class from all links
+    links.forEach((link) => link.classList.remove("active"));
+
+    // Add active class to the clicked link
+    link.classList.add("active");
+  });
+});
+
 const last = document.querySelector("#last");
 // use the date object
 const today = new Date();
@@ -34,15 +46,6 @@ hamButton.addEventListener("click", () => {
 //     this.classList.toggle("active");
 //   });
 // }
-
-document.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    document
-      .querySelectorAll("a")
-      .forEach((link) => link.classList.remove("active"));
-    link.classList.add("active");
-  });
-});
 
 const startupProjects = [
   {
