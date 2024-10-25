@@ -1,3 +1,6 @@
+const last = document.querySelector("#last");
+// use the date object
+const today = new Date();
 const lastModified = document.lastModified;
 const formattedDateTime = new Date(lastModified).toLocaleString();
 
@@ -31,7 +34,7 @@ if (projectID !== "") {
   const message = `This is your first visit. 🥳 Welcome!`;
 }
 
-console.log(projectObject);
+// console.log(projectObject);
 const category = document.getElementById("tagline");
 category.innerHTML = `<strong >Category</strong>: ${projectObject.name}`;
 
