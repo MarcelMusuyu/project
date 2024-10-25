@@ -113,6 +113,51 @@
               />
             </div>
           </div>
+
+          <fieldset class="form-info-payment">
+            <legend>Payment Information</legend>
+            <div class="form-info">
+              <div class="form-group">
+                <label class="paypal" for="paypal"> </label>
+                <input type="radio" id="paypal" name="stars" required />
+              </div>
+              <div class="form-group">
+                <label class="master" for="mastercard"> </label>
+                <input type="radio" id="mastercard" name="stars" required />
+              </div>
+              <div class="form-group">
+                <label class="visa" for="paypal"> </label>
+                <input type="radio" id="paypal" name="stars" required />
+              </div>
+              <div class="form-group">
+                <label class="ebay" for="paypal"> </label>
+                <input type="radio" id="paypal" name="stars" required />
+              </div>
+            </div>
+            <div class="form-info">
+              <div class="form-group">
+                <label for="amount">Amount</label>
+                <input
+                  type="number"
+                  name="amount"
+                  class="form-control"
+                  id="amount"
+                  required=""
+                />
+              </div>
+              <div class="form-group">
+                <label for="card">Card number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="XXXX-XXXX-XXXX-XXXX"
+                  name="card"
+                  id="card"
+                  required=""
+                />
+              </div>
+            </div>
+          </fieldset>
           <div class="form-group">
             <label for="subject">Subject</label>
             <input

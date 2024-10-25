@@ -581,8 +581,14 @@ h2 {
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-.php-email-form input {
+.php-email-form input[type="email"],
+.php-email-form input[type="number"],
+.php-email-form input[type="text"] {
   height: 50px;
+}
+
+.php-email-form input[type="radio"] {
+  height: 20px;
 }
 
 .form-group {
@@ -594,6 +600,12 @@ h2 {
 }
 .form-info {
   display: flex;
+  width: 90%;
+  align-items: center;
+}
+.form-info-payment {
+  display: flex;
+  flex-direction: column;
   width: 90%;
   align-items: center;
 }
@@ -675,6 +687,46 @@ h2 {
 }
 #email_::before {
   content: url(../images/email.png);
+}
+
+.paypal {
+  display: flex;
+  align-items: center;
+}
+.paypal::before {
+  content: url(../images/Paypal-39-64.webp);
+}
+
+.master {
+  display: flex;
+  align-items: center;
+}
+.master::before {
+  content: url(../images/Mastercard-64.webp);
+}
+
+.ebay {
+  display: flex;
+  align-items: center;
+}
+.ebay::before {
+  content: url(../images/ebay-64.webp);
+}
+
+input[type="text"]::placeholder {
+  /* Customize placeholder styles here */
+  color: gray; /* Change placeholder color */
+  font-style: italic; /* Change font style */
+  text-align: center;
+  font-size: 14px; /* Change font size */
+}
+
+.visa {
+  display: flex;
+  align-items: center;
+}
+.visa::before {
+  content: url(../images/Visa-64.webp);
 }
 
 .faq .faq-list {
