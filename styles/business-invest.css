@@ -676,6 +676,65 @@ h2 {
 #email_::before {
   content: url(../images/email.png);
 }
+
+.faq .faq-list {
+  padding: 0 100px;
+}
+.faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+
+  right: 0;
+  left: 20px;
+  color: #47b2e4;
+}
+.bx-help-circle {
+  border: 3px solid#47b2e4;
+  width: 2%;
+  text-align: center;
+  font-weight: bolder;
+  border-radius: 100%;
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.faq .faq-list li {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+}
+.faq .faq-list ul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+  list-style: none;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+.faq .faq-list a.collapsed {
+  color: #37517e;
+  transition: 0.3s;
+}
 footer {
   background-color: #0f3f5f;
   color: #ffffff;

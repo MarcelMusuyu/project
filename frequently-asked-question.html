@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BusinessInvest | WDD 131.</title>
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals,The businessInvest WebSite Project"
+    />
+    <meta name="author" content="Marcel Nyembo" />
+    <link rel="stylesheet" href="styles/business-invest.css" />
+    <link rel="stylesheet" href="styles/business-invest-large.css" />
+    <script src="scripts/business-invest.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1>BusinessInvest</h1>
+        <img
+          src="images/startup_project_launch_rocket_laptop.webp"
+          alt="Home Page Wireframe Example Design"
+          width="90"
+          height="90"
+        />
+      </div>
+
+      <a id="menu" href="#"></a>
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html" id="home" class="active menu">Home</a></li>
+
+          <li><a href="about-us.html" class="menu">About Us</a></li>
+          <li>
+            <div class="dropdown">
+              <a href="#" class="dropbtn">Projects </a>
+
+              <div class="dropdown-content">
+                <a id="new" href="#">Recent</a>
+                <a href="#" id="expensive">Expensive </a>
+                <a href="#" id="cheap">Cheap</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="contact-us.html" class="menu">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="faq" class="faq section-bg">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+            <p>
+              In this page you will find frenquetly questions about the business
+              investment and relative question to our platform functionnality
+              and services .
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <ul>
+              <li>
+                <i class="bx bx-help-circle icon-help">?</i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-2"
+                  class="collapsed"
+                >
+                  How can I Finance and support a project?
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-2"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    AT the firsthand, you need to click on see the project where
+                    you could have the opportunity to get more details about the
+                    project. Under the project section, there is form where you
+                    could make a fund deposit and your related information
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <i class="bx bx-help-circle icon-help">?</i>
+                <a class="collapsed">
+                  How can I be sure that My investment reaches the appropriate
+                  project? <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-3"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Our company is one the accredited institution that is
+                    authorized to work under policies and laws fixed the
+                    goveverment. Third-party orgazations are credible
+                    stakeholders that guarantee the transparency of projects
+                    investment.
+                  </p>
+                </div>
+              </li>
+
+              <li class="aos-init aos-animate">
+                <i class="bx bx-help-circle icon-help">?</i>
+                <a class="collapsed"
+                  >What if a business fail to start?
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-4"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    There is a great network of talented stakeholders such as
+                    business experts, project managers, strategic marketers,
+                    etc... These expert teams are available to provide skills
+                    and strategies to younger students in their business
+                    journey.
+                  </p>
+                </div>
+              </li>
+
+              <li class="aos-init aos-animate">
+                <i class="bx bx-help-circle icon-help">?</i>
+                <a class="collapsed"
+                  >Where can I find contact information for the BusinessInvest's
+                  customer? <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-5"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    On the contact us page you will find our contact
+                    informations as long as our offices location.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="footer">
+        <div class="footer-newsletter">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <h4>Join Our Newsletter</h4>
+                <p>
+                  Join our Newsletter for getting new updates about the business
+                  trend
+                </p>
+                <form action="" method="post">
+                  <input type="email" name="email" />
+                  <input type="submit" value="Subscribe" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        ©️<span id="currentyear"></span>🌴 Nyembo Musuyu Marcel 🌴 Lubumbashi,
+        Republic Democratic Of Congo
+      </p>
+      <p><em id="last"></em></p>
+    </footer>
+  </body>
+</html>
