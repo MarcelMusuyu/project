@@ -35,7 +35,8 @@ body {
   align-content: center;
 }
 
-h1 {
+h1,
+.brand h2 {
   text-align: center;
   font-family: var(--heading-font);
   font-weight: bold;
@@ -240,7 +241,7 @@ img {
   color: #fff;
   background: #47b2e4;
 }
-#hero h1,
+#hero h2,
 h2 {
   margin: 0 0 10px 0;
   font-size: 48px;
@@ -249,7 +250,7 @@ h2 {
   color: #fff;
 }
 
-#hero h2 {
+#hero h3 {
   font-size: 30px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.6);
@@ -274,7 +275,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  
+
   align-content: baseline;
 }
 
@@ -405,6 +406,9 @@ h2 {
   font-weight: 500;
   margin-bottom: 15px;
   font-size: 20px;
+  color: #37517e;
+}
+.projects h2 {
   color: #37517e;
 }
 .pricing h4 {
